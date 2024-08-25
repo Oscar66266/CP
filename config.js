@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 import fs from 'fs'
 
 global.owner = [
-  ['15108170058', 'Ton', true],
+  ['15108170058', 'Luis sexo', true],
   ['']
 ] //Numeros de owner 
 
@@ -22,7 +22,7 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '' 
+global.packname = '【 ✯ Starlights Team - Oficial Channel ✰ 】' 
 global.author = 'Ai Kiyosumi' 
 global.fs = fs
 
