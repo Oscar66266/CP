@@ -15,10 +15,10 @@ let handler = async (m, { conn, text, args, groupMetadata, usedPrefix, command }
             m.reply(`
 ⚠️ *${mssg.userWarn}* ⚠️
 
-▢ *${mssg.admin}:* ${name}
-▢ *${mssg.user}:* @${who.split`@`[0]}
-▢ *${mssg.warns}:* ${warn + 1}/${war}
-▢ *${mssg.with}:* ${txt}`, null, { mentions: [who] }) 
+🚩 *${mssg.admin}:* ${name}
+🚩 *${mssg.user}:* @${who.split`@`[0]}
+🚩 *${mssg.warns}:* ${warn + 1}/${war}
+🚩 *${mssg.with}:* ${txt}`, null, { mentions: [who] }) 
             m.reply(`
 ⚠️ *${mssg.warn.toUpperCase()}* ⚠️
 ${mssg.warnRec}
