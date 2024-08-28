@@ -7,8 +7,8 @@ let handler = async (m, { conn, args, groupMetadata}) => {
       m.reply(`
    *${mssg.warns.toUpperCase()}*
 
-▢ *${mssg.name} :* ${name} 
-▢ *${mssg.warns} :* ${warn}`)
+🚩 *${mssg.name} :* ${name} 
+🚩 *${mssg.warns} :* ${warn}`)
 }
 
 handler.help = ['warns']
