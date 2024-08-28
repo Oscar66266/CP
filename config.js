@@ -22,12 +22,12 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '' 
-global.author = 'Ai Kiyosumi' 
+global.packname = ' 🚩 Starlights' 
+global.author = 'Team' 
 global.fs = fs
 
 //--info Kiyo
-global.botName = 'Ai Kiyosumi'
+global.botName = 'Ai'
 global.fgig = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B' 
 global.fgsc = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B' 
 global.fgyt = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B'
