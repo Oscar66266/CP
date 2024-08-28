@@ -5,12 +5,12 @@ import { fileURLToPath } from 'url'
 import fs from 'fs'
 
 global.owner = [
-  ['15108170058', 'Ton', true],
+  ['66666666666', '6666666666', true],
   ['']
 ] //Numeros de owner 
 
 global.mods = [''] 
-global.prems = ['', '']
+global.prems = ['5219981156963', '']
 global.APIs = { // API Prefix
   // name: 'https://website' 
   nrtm: 'https://fg-nrtm.ddns.net',
