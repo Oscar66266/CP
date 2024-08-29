@@ -28,19 +28,19 @@ global.fs = fs
 
 //--info Kiyo
 global.botName = 'Ai'
-global.fgig = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B' 
-global.fgsc = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B' 
-global.fgyt = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B'
-global.fgpyp = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B'
-global.fglog = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B' 
+global.fgig = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S' 
+global.fgsc = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S' 
+global.fgyt = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
+global.fgpyp = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
+global.fglog = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S' 
 global.canal1 = 'https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A'
 
 //--- Grupos WA
 global.id_canal = '120363292409483536@newsletter' //-ID de canal de WhatsApp
-global.fgcanal = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B'
-global.bgp = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B'
-global.bgp2 = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B'
-global.bgp3 = 'https://whatsapp.com/channel/0029VaYTBn3DZ4LaHbgzxw0B' //--GP NSFW
+global.fgcanal = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
+global.bgp = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
+global.bgp2 = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
+global.bgp3 = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S' //--GP NSFW
 
 global.wait = '⌛ _Cargando..._\n*▬▬▬▭*'
 global.rwait = '⌛'
