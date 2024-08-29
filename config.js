@@ -36,7 +36,7 @@ global.fglog = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 global.canal1 = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 
 //--- Grupos WA
-global.id_canal = '140282221838468@newsletter' //-ID de canal de WhatsApp
+global.id_canal = '140282221838468@lid' //-ID de canal de WhatsApp
 global.fgcanal = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 global.bgp = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 global.bgp2 = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
