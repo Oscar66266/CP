@@ -34,6 +34,8 @@ global.fgyt = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 global.fgpyp = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 global.fglog = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S' 
 global.canal1 = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
+global.namechannel = '【 ✯ Starlights Team - Oficial Chanel ✰ 】'
+
 
 //--- Grupos WA
 global.id_canal = '140282221838468@lid' //-ID de canal de WhatsApp
