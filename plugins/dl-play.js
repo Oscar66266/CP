@@ -11,7 +11,7 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
- if (!text) return conn.reply(m.chat, `*Ingrese el nombre de un cancion/video de YouTube*`,  m)
+ if (!text) return conn.reply(m.chat, `*🚩 *Ingrese el nombre de un video de YouTube*`,  m, rcanal)
   try {
     const yt_play = await search(args.join(' '));
     let additionalText = '';
@@ -26,7 +26,8 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 > Duración:
 > ${secondString(yt_play[0].duration.seconds)}
 
-> _*Enviando ${additionalText}, Aguarde Un Momento...*_`.trim();
+> _*Enviando ${additionalText}, Aguarde Un Momento...
+🚩 Power By Starlights*_`.trim();
 await conn.sendMessage(m.chat, { text: texto1, contextInfo: { externalAdReply: { title: yt_play[0].title, body: botName, thumbnailUrl: yt_play[0].thumbnail, mediaType: 1, showAdAttribution: true, renderLargerThumbnail: true }}} , { quoted: m })
   if (command == 'play') {
     try {    
