@@ -1,16 +1,16 @@
-
-let handler = async (m, { conn, usedPrefix, command }) => {
+let handler = async (m, { conn, participants, usedPrefix, command, isROwner }) => {
 	
-if (!m.mentionedJid[0] && !m.quoted) return m.reply(`✳️ ${mssg.useCmd}\n\n*${usedPrefix + command}* @tag`) 
+let kickte = `🚩 Menciona al usuario que deseas eliminar.`
+
+if (!m.mentionedJid[0] && !m.quoted) return m.reply(kickte, m.chat, { mentions: conn.parseMention(kickte)}) 
 let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
-if (conn.user.jid.includes(user)) return m.reply(`✳️ No puedo hacer un auto kick`)
-
+let owr = m.chat.split`-`[0]
 await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
-m.reply(`✅ ${mssg.kick}`) 
-
+m.reply(`🚩 Usuario eliminado.`)
+m.reply(`Lo siento, acabas de ser eliminado del grupo.`, user)
 }
 
-handler.help = ['kick @user']
+handler.help = ['kick *@user*']
 handler.tags = ['group']
 handler.command = ['kick', 'expulsar'] 
 handler.admin = true
