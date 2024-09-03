@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 import fs from 'fs'
 
 global.owner = [
-  ['14696257948', 'Anuar Gay', true],
+  ['529981156963', 'Starligts', true],
   ['']
 ] //Numeros de owner 
 
@@ -43,6 +43,8 @@ global.fgcanal = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 global.bgp = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 global.bgp2 = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 global.bgp3 = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S' //--GP NSFW
+
+global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: '🚩 Starlights スターライト', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 
 global.wait = '⌛ _Cargando..._\n*▬▬▬▭*'
 global.rwait = '⌛'
