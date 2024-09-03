@@ -147,9 +147,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     
     let pp = 'https://tinyurl.com/2gs9xs34'
 
-    conn.sendButton2(m.chat, text.trim(), null, pp, [
-        ], null, [['Canal', `${fgcanal}`]], m, rcanal)
-    /*conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rcanal)*/
+    //conn.sendButton2(m.chat, text.trim(), null, pp, [
+        //], null, [['Canal', `${fgcanal}`]], m)
+    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rcanal)
   
     m.react('📜') 
     
