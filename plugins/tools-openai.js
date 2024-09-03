@@ -1,22 +1,28 @@
+import fetch from 'node-fetch'
 
-import fetch from 'node-fetch';
-let handler = async (m, { conn, text }) => {
-	
-if (!text) throw `✳️ ${mssg.notext}`;
-m.react('💬')
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+    if (!text) return conn.reply(m.chat, `*🚩 Ingrese su petición*\n*🪼 Ejemplo de uso:* ${usedPrefix + command} como hacer estrella de papel`, m, rcanal)
+    await m.react('💬')
 
- let syst = `Eres Senna Bot, un gran modelo de lenguaje entrenado por OpenAI. Siga cuidadosamente las instrucciones del usuario. Responde usando Markdown.`
-	try {
-		let gpt = await fetch(global.API('fgmods', '/api/info/openai', { prompt: syst, text }, 'apikey'));
-        let res = await gpt.json()
-        await m.reply(res.result, null, rcanal)
-	} catch {
-		m.reply(`❎ Error: intenta más tarde`);
-	}
+    try {
+        let api = await fetch(`https://apis-starlights-team.koyeb.app/starlight/chatgpt?text=${encodeURIComponent(text)}`)
+        let json = await api.json()
 
+        if (json.result) {
+            await conn.reply(m.chat, json.result, m, rcanal)
+        } else {
+            await m.react('✖️')
+        }
+    } catch (error) {
+        console.error(error)
+        await m.react('✖️')
+        await conn.reply(m.chat, '❌ Ocurrió un error al procesar tu solicitud.', m, rcanal)
+    }
 }
-handler.help = ['ai <text>']; 
-handler.tags = ['tools'];
-handler.command = ['ia', 'ai', 'chatgpt', 'openai', 'gpt'];
 
-export default handler;
+handler.help = ['ai *<petición>*']
+handler.tags = ['tools']
+handler.command = /^(miku|ai|ia|chatgpt|gpt)$/i
+handler.register = true
+
+export default handler
