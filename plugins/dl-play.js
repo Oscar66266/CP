@@ -14,7 +14,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
  if (!text) return conn.reply(m.chat, `🚩 Ingresa el título de un video o canción de YouTube.
 
 *Ejemplo*:
-> *.play* Artemas - i like the way you kiss me`,  m, rcanal)
+> *.play* ThekillerGay Es follado por negros`,  m, rcanal)
   try {
     const yt_play = await search(args.join(' '));
     let additionalText = '';
