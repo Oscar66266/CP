@@ -32,7 +32,7 @@ const defaultMenu = {
   before: `
 
  
-     > Hola! *%name*, Soy *_Starlights_*\n> *Usuarios:* %totalreg\n> *Tiempo activa:* %muptime
+     > Hola! *%name*, Soy *Starlights* , *Usuarios:* %totalreg\n> *Tiempo activa:* %muptime
 %sbot
 ─────────────────────
 %readmore
