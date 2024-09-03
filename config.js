@@ -25,6 +25,7 @@ global.APIKeys = { // APIKey Here
 global.packname = ' 🚩 Starlights' 
 global.author = 'Team' 
 global.fs = fs
+global.namechannel = '【 ✯ Starlights Team - Oficial Chanel ✰ 】'
 
 //--info Kiyo
 global.botName = 'Ai'
