@@ -54,7 +54,7 @@ global.xmoji = '🔥'
 global.miniurl = fs.readFileSync('./src/catalogo.png')
 
 global.multiplier = 69 
-global.maxwarn = '2' // máxima advertencias
+global.maxwarn = '1' // máxima advertencias
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
