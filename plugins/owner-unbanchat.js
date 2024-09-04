@@ -1,12 +1,11 @@
-//import db from '../lib/database.js'
-
-let handler = async (m, { conn, isOwner, isAdmin, isROwner} ) => {
-    if (!(isAdmin || isOwner)) return dfail('admin', m, conn)
+let handler = async (m, { conn, isAdmin, isROwner} ) => {
+    if (!(isAdmin || isROwner)) return dfail('admin', m, conn)
     global.db.data.chats[m.chat].isBanned = false
-    m.reply(`✅ ${mssg.unBanChat}`)   
+    await conn.reply(m.chat, '🚩 Bot activo en este grupo.', m, rcanal)
+    await m.react('✅')
 }
-handler.help = ['unbanchat']
-handler.tags = ['owner']
-handler.command = ['chaton', 'unbanchat'] 
-
+handler.help = ['desbanearbot']
+handler.tags = ['group']
+handler.command = ['desbanearbot', 'unbanchat']
+handler.group = true 
 export default handler
