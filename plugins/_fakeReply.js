@@ -12,7 +12,7 @@ export async function before(m, { conn }) {
     forwardedNewsletterMessageInfo: {
       newsletterJid: "120363191779210764@newsletter",
       serverMessageId: 100,
-      newsletterName: nam,
+      newsletterName: namechannel,
     }, 
       externalAdReply: {
         mediaUrl: bgp,
@@ -33,14 +33,14 @@ export async function before(m, { conn }) {
     forwardedNewsletterMessageInfo: {
       newsletterJid: "120363191779210764@newsletter",
       serverMessageId: 100,
-      newsletterName: nam,
+      newsletterName: namechannel,
     }, 
       externalAdReply: {
         mediaUrl: fgcanal,
         mediaType: 'VIDEO',
         description: 'canal del grupo',
         title: packname,
-        body: 'Canal de Kiyosumi',
+        body: '🚩 Starlights',
         thumbnailUrl: pp,
         sourceUrl: fgcanal
       }
