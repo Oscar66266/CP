@@ -18,7 +18,7 @@ export async function before(m, { conn }) {
         mediaType: 'VIDEO',
         description: 'support group',
         title: packname,
-        body: 'grupo de soporte',
+        body: '🚩 Starlights こんにちは',
         thumbnailUrl: pp,
         sourceUrl: bgp
       }
@@ -39,7 +39,7 @@ export async function before(m, { conn }) {
         mediaType: 'VIDEO',
         description: 'canal del grupo',
         title: packname,
-        body: 'Canal de Kiyosumi',
+        body: '🚩 Starlights こんにちは',
         thumbnailUrl: pp,
         sourceUrl: fgcanal
       }
