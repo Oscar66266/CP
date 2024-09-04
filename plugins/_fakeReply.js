@@ -1,18 +1,17 @@
-
 import fetch from 'node-fetch';
 export async function before(m, { conn }) {
    let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/c141ab6034df4a018c73a.jpg');
 
-  let nam = "【 ✯ Starlights Team - Oficial Chanel ✰ 】"
+  let nam = "Ai Kiyosumi"
   
   // Respuesta con enlace de WhatsApp
   global.rpl = {
     contextInfo: {
     	isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: "120363191779210764@newsletter",
+      newsletterJid: id_canal,
       serverMessageId: 100,
-      newsletterName: namechannel,
+      newsletterName: nam,
     }, 
       externalAdReply: {
         mediaUrl: bgp,
@@ -31,16 +30,16 @@ export async function before(m, { conn }) {
     contextInfo: {
     	isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: "120363191779210764@newsletter",
+      newsletterJid: id_canal,
       serverMessageId: 100,
-      newsletterName: namechannel,
+      newsletterName: nam,
     }, 
       externalAdReply: {
         mediaUrl: fgcanal,
         mediaType: 'VIDEO',
         description: 'canal del grupo',
         title: packname,
-        body: '🚩 Starlights',
+        body: 'Canal de Kiyosumi',
         thumbnailUrl: pp,
         sourceUrl: fgcanal
       }
@@ -52,7 +51,7 @@ export async function before(m, { conn }) {
     contextInfo: {
     	isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: "120363191779210764@newsletter",
+      newsletterJid: id_canal,
       serverMessageId: 100,
       newsletterName: nam,
     }
