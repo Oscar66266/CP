@@ -42,6 +42,8 @@ global.fgcanal = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 global.bgp = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 global.bgp2 = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'
 global.bgp3 = 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S' //--GP NSFW
+global.namechannel = '【 ✯ Starlights Team - Oficial Chanel ✰ 】'
+
 
 global.wait = '⌛ _Cargando..._\n*▬▬▬▭*'
 global.rwait = '⌛'
