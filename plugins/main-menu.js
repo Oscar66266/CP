@@ -149,7 +149,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 
     //conn.sendButton2(m.chat, text.trim(), null, pp, [
         //], null, [['Canal', `${fgcanal}`]], m)
-    conn.sendFile(m.chat, pp, 'https://telegra.ph/Nose-09-04', is text.trim(), m, null, rcanal)
+    conn.sendFile(m.chat, pp, 'https://telegra.ph/file/851a8c872aa17bacc0736.jpg', is text.trim(), m, null, rcanal)
   
     m.react('🚩') 
     
