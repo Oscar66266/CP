@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 export async function before(m, { conn }) {
-   let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/Nose-09-04');
+   let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/851a8c872aa17bacc0736.jpg');
 
   let nam = "【 ✯ Starlights Team - Oficial Chanel ✰ 】"
   
