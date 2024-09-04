@@ -32,7 +32,7 @@ const defaultMenu = {
   before: `
 
  
-     > Hola! *%name*, Soy *Starlights* , *Usuarios:* %totalreg\n> *Tiempo activa:* %muptime
+     > Hola! *%name*, soy *_Kiyosumi_*\n> *Usuarios:* %totalreg\n> *Tiempo activa:* %muptime
 %sbot
 ─────────────────────
 %readmore
@@ -149,9 +149,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 
     //conn.sendButton2(m.chat, text.trim(), null, pp, [
         //], null, [['Canal', `${fgcanal}`]], m)
-    conn.sendFile(m.chat, pp, 'IMG-20240902-WA0629.jpg', is text.trim(), m, null, rcanal)
+    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rcanal)
   
-    m.react('🚩') 
+    m.react('📜') 
     
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
@@ -177,4 +177,4 @@ function clockString(ms) {
     
     
     
-}
+  }
