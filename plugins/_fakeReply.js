@@ -1,128 +1,36 @@
+import fetch from 'node-fetch'
 
-import fetch from 'node-fetch';
 export async function before(m, { conn }) {
-   let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/c141ab6034df4a018c73a.jpg');
+let img = await (await fetch(`https://tinyurl.com/2c5hk765`)).buffer()
 
-  let nam = "【 ✯ Starlights Team - Oficial Chanel ✰ 】"
-  
-  // Respuesta con enlace de WhatsApp
-  global.rpl = {
+ global.rcanal = {
     contextInfo: {
     	isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: id_canal,
+      newsletterJid: "120363191779210764@newsletter",
       serverMessageId: 100,
-      newsletterName: nam,
-    }, 
-      externalAdReply: {
-        mediaUrl: bgp,
-        mediaType: 'VIDEO',
-        description: 'support group',
-        title: packname,
-        body: 'grupo de soporte',
-        thumbnailUrl: pp,
-        sourceUrl: bgp
-      }
-    }
-  };
-  
-  // Respuesta con enlace de Canal de WhatsApp
-  global.rcanal = {
-    contextInfo: {
-    	isForwarded: true,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: id_canal,
-      serverMessageId: 100,
-      newsletterName: nam,
-    }, 
-      externalAdReply: {
-        mediaUrl: fgcanal,
-        mediaType: 'VIDEO',
-        description: 'Starlights',
-        title: packname,
-        body: '【 ✯ Starlights Team - Oficial Chanel ✰ 】',
-        thumbnailUrl: pp,
-        sourceUrl: fgcanal
-      }
-    }
-  }
-  
-    // Forwarded
-  global.fwc = {
-    contextInfo: {
-    	isForwarded: true,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: id_canal,
-      serverMessageId: 100,
-      newsletterName: nam,
-    }
-    }
+      newsletterName: namechannel,
+    },
+    },
   }
 
-  // Respuesta con enlace de PayPal
-  global.rpyp = {
-    contextInfo: {
-    	isForwarded: true,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: id_canal,
-      serverMessageId: 100,
-      newsletterName: nam,
-    }, 
-      externalAdReply: {
-        mediaUrl: fgpyp,
-        mediaType: 'VIDEO',
-        description: 'Donate',
-        title: 'PayPal',
-        body: 'ayuda a mantener el bot activo',
-        thumbnailUrl: pp,
-        sourceUrl: fgpyp
-      }
-    }
-  };
-
-  // Respuesta con enlace de Instagram
-  global.rpig = {
-    contextInfo: {
-    	isForwarded: true,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: id_canal,
-      serverMessageId: 100,
-      newsletterName: nam,
-    }, 
-      externalAdReply: {
-        mediaUrl: fgig,
-        mediaType: 'VIDEO',
-        description: 'Sigueme por Instagram',
-        title: 'Instagram',
-        body: 'sigueme en mi canal',
-        thumbnailUrl: pp,
-        sourceUrl: fgig
-      }
-    }
-  };
-
-  // Respuesta con enlace de YouTube
-  global.rpyt = {
-    contextInfo: {
-    	isForwarded: true,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: id_canal,
-      serverMessageId: 100,
-      newsletterName: nam,
-    }, 
-      externalAdReply: {
-        showAdAttribution: true,
-        mediaUrl: fgyt,
-        mediaType: 'VIDEO',
-        description: 'Suscribete: ' + fgyt,
-        title: 'FG YouTube',
-        body: '【 ✯ Starlights Team - Oficial Chanel ✰ 】',
-        thumbnailUrl: pp,
-        sourceUrl: fgyt
-      }
-    }
-  }
-  
-  
-  
+ global.adReply = {
+	    contextInfo: { 
+             forwardingScore: 9999, 
+                 isForwarded: false, 
+                    externalAdReply: {
+				    showAdAttribution: true,
+					title: botname,
+					body: textbot,
+					mediaUrl: null,
+					description: null,
+					previewType: "PHOTO",
+					thumbnailUrl: img,
+                    thumbnail: img,
+		           sourceUrl: canal,
+		           mediaType: 1,
+                   renderLargerThumbnail: true
+				}
+			}
+		}
 }
