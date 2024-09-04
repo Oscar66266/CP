@@ -3,14 +3,14 @@ import fetch from 'node-fetch';
 export async function before(m, { conn }) {
    let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/c141ab6034df4a018c73a.jpg');
 
-  let nam = "Ai Kiyosumi"
+  let nam = "【 ✯ Starlights Team - Oficial Chanel ✰ 】"
   
   // Respuesta con enlace de WhatsApp
   global.rpl = {
     contextInfo: {
     	isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: id_canal,
+      newsletterJid: "120363191779210764@newsletter",
       serverMessageId: 100,
       newsletterName: nam,
     }, 
