@@ -1,25 +1,18 @@
+import Starlights from '@StarlightsTeam/Scraper'
 
-import fg from 'api-dylux';
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {
-  
-if (!args[0]) throw `✳️ ${mssg.noLink('Facebook')}\n\n📌 ${mssg.example} :\n*${usedPrefix + command}* https://fb.watch/d7nB8-L-gR/`
-  m.react(rwait);
-
-  try {
-    let result = await fg.fbdl(args[0]);
-    let tex = `
-┌─⊷ *FBDL*
-▢ *${mssg.title}:* ${result.title}
-└───────────`;
-    conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
-    m.react(done);
-  } catch (error) {
-    m.reply(mssg.error)
-  }
-};
-handler.help = ['facebook'].map(v => v + ' <url>');
-handler.tags = ['dl'];
-handler.command = /^((facebook|fb)(downloder|dl)?)$/i;
-handler.diamond = true;
-
-export default handler;
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+if (!args || !args[0]) return conn.reply(m.chat, '🚩 Ingresa el enlace del vídeo de Facebook junto al comando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://www.facebook.com/official.trash.gang/videos/873759786348039/?mibextid=rS40aB7S9Ucbxw6v`, m, rcanal)
+await m.react('🕓')
+try {
+let { dl_url } = await Starlights.fbdl(args[0])
+await conn.sendFile(m.chat, dl_url, 'fbdl.mp4', listo, m, null, rcanal)
+await m.react('✅')
+} catch {
+await m.react('✖️')
+}}
+handler.help = ['fb *<link fb>*']
+handler.tags = ['downloader'] 
+handler.command = /^(facebook|fb|facebookdl|fbdl)$/i
+//handler.limit = 1
+handler.register = true
+export default handler
