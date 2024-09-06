@@ -22,7 +22,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 ▢ *${mssg.desc}:* ${data.result.title}
 └───────────
 `
-            conn.sendFile(m.chat, data.result.play, 'tiktok.mp4', tex, m);
+            conn.sendFile(m.chat, data.result.play, 'tiktok.mp4', tex, m, null, rcanl);
             m.react(done)
         } else {
             let cap = `
