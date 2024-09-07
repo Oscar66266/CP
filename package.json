@@ -39,6 +39,7 @@
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
+        "link-preview-js": "^3.0.5",
         "@StarlightsTeam/Scraper": "github:StarlightsTeam/StarlightsTeam-Scraper",
         "@whiskeysockets/baileys": "^6.7.1",
         "@adiwajshing/keyed-db": "^0.2.4",
