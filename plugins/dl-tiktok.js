@@ -12,15 +12,17 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
         let data = await res.json()
 
         if (!data.result.images) {
-            let tex = `
-┌─⊷ *TIKTOK DL* 
-▢ *${mssg.name}:* ${data.result.author.nickname}
-▢ *${mssg.username}:* ${data.result.author.unique_id}
-▢ *${mssg.duration}:* ${data.result.duration}
-▢ *Likes:* ${data.result.digg_count}
-▢ *${mssg.views}:* ${data.result.play_count}
-▢ *${mssg.desc}:* ${data.result.title}
-└───────────
+            let txt = '`乂  T I K T O K  -  D O W N L O A D`\n\n'
+    txt += `	✩  *Título* : ${title}\n`
+    txt += `	✩  *Autor* : ${author}\n`
+    txt += `	✩  *Duración* : ${duration} segundos\n`
+    txt += `	✩  *Vistas* : ${views}\n`
+    txt += `	✩  *Likes* : ${likes}\n`
+    txt += `	✩  *Comentarios* : ${comment}\n`
+    txt += `	✩  *Compartidos* : ${share}\n`
+    txt += `	✩  *Publicado* : ${published}\n`
+    txt += `	✩  *Descargas* : ${downloads}\n\n`
+    txt += `> 🚩 *${textbot}*`
 `
             conn.sendFile(m.chat, data.result.play, 'tiktok.mp4', tex, m, null, rcanl);
             m.react(done)
