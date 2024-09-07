@@ -47,7 +47,7 @@
         "awesome-phonenumber": "^3.4.0",
         "axios": "^1.1.2",
         "awesome-phonenumber": "^3.4.0",
-        "form-data": "^4.0.0",
+        "formdata-node": "^6.0.3",
         "cfonts": "^3.1.1",
         "chalk": "^5.1.0",
         "cheerio": "^1.0.0-rc.12",
