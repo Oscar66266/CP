@@ -22,7 +22,7 @@ var tiempoDecretado = 5 * 1 //tiempo decretado
 const gata = 50
 let user = global.db.data.users[m.sender]
     
-if (!text) return conn.reply(m.chat, `*Ingrese el tiempo*\n\n  *1 = ${tiempoDecretado} MINUTOS*\n  *5 MINUTOS = 50💎*\n\n*EJEMPLO: ${usedPrefix + command} 1*`, fkontak, m)
+if (!text) return conn.reply(m.chat, `*Ingrese el tiempo*\n\n  *1 = ${tiempoDecretado} MINUTOS*\n  *6666666 MINUTOS = 1💎*\n\n*EJEMPLO: ${usedPrefix + command} 1*`, fkontak, m)
 if (isNaN(text)) return conn.reply(m.chat, `*SOLO NUMEROS*\n\n*EJEMPLO: ${usedPrefix + command} 1*`, fkontak, m)
 if (user.diamond < gata) return conn.reply(m.chat, `*No tienes suficientes 💎 para comprar vip, use ${usedPrefix}buy*`, fkontak, m)
 user.diamond -= gata * text
