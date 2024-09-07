@@ -30,7 +30,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 > ${secondString(yt_play[0].duration.seconds)}
 
 > _*Enviando ${additionalText}, Aguarde Un Momento...
-🚩 Power By Starlights*_`.trim();
+> 🚩 Powered By Starlights Team`.trim();
 await conn.sendMessage(m.chat, { text: texto1, contextInfo: { externalAdReply: { title: yt_play[0].title, body: botName, thumbnailUrl: yt_play[0].thumbnail, mediaType: 1, showAdAttribution: true, renderLargerThumbnail: true }}} , { quoted: m })
   if (command == 'play') {
     try {    
