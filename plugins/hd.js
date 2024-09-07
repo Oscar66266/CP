@@ -1,41 +1,36 @@
-import FormData from "form-data";
-const handler = async (m, {conn}) => {
- try {    
+import FormData from "form-data"
+import Jimp from "jimp"
+const handler = async (m, {conn, usedPrefix, command}) => {
+  try {    
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || q.mediaType || ""
-  if (!mime) throw `Responda a una imagen`
-  if (!/image\/(jpe?g|png)/.test(mime)) throw `
-> Formato no compatible
-
-El formato no es compatible, intente con otro formato.`
-  m.reply(`${wait}`)
+  if (!mime) return conn.reply(m.chat, `🚩 Responde a una *Imagen.*`, m, rcanal)
+  await m.react('🕓')
   let img = await q.download?.()
   let pr = await remini(img, "enhance")
-  conn.sendMessage(m.chat, {image: pr}, {quoted: m})
- } catch {
-  throw `
-> responde una imagen
-`;
- }
-};
-handler.help = ["convertirhd"]
-handler.tags = ["ai"]
-handler.command = ["hd"]
-
-export default handler;
+  await conn.sendFile(m.chat, pr, 'thumbnail.jpg', listo, m, null, rcanal)
+  await m.react('✅')
+  } catch {
+  await m.react('✖️')
+}}
+handler.help = ["hd"]
+handler.tags = ["tools"]
+handler.command = ["remini", "hd", "enhance"]
+handler.register = true 
+export default handler
 
 async function remini(imageData, operation) {
   return new Promise(async (resolve, reject) => {
-    const availableOperations = ["enhance", "recolor", "dehaze"];
+    const availableOperations = ["enhance", "recolor", "dehaze"]
     if (availableOperations.includes(operation)) {
-      operation = operation;
+      operation = operation
     } else {
-      operation = availableOperations[0];
+      operation = availableOperations[0]
     }
-    const baseUrl = "https://inferenceengine.vyro.ai/" + operation + ".vyro";
-    const formData = new FormData();
-    formData.append("image", Buffer.from(imageData), {filename: "enhance_image_body.jpg", contentType: "image/jpeg"});
-    formData.append("model_version", 1, {"Content-Transfer-Encoding": "binary", contentType: "multipart/form-data; charset=utf-8"});
+    const baseUrl = "https://inferenceengine.vyro.ai/" + operation + ".vyro"
+    const formData = new FormData()
+    formData.append("image", Buffer.from(imageData), {filename: "enhance_image_body.jpg", contentType: "image/jpeg"})
+    formData.append("model_version", 1, {"Content-Transfer-Encoding": "binary", contentType: "multipart/form-data; charset=utf-8"})
     formData.submit({url: baseUrl, host: "inferenceengine.vyro.ai", path: "/" + operation, protocol: "https:", headers: {"User-Agent": "okhttp/4.9.3", Connection: "Keep-Alive", "Accept-Encoding": "gzip"}},
       function (err, res) {
         if (err) reject(err);
@@ -46,6 +41,6 @@ async function remini(imageData, operation) {
         reject(err);
         });
       },
-    );
-  });
+    )
+  })
 }
