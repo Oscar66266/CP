@@ -75,7 +75,7 @@ await conn.sendMessage(m.chat, { text: texto1, contextInfo: { externalAdReply: {
 }
     if (command == 'play2') {
     try {  
-    const qu = '360';
+    const qu = '480';
     const q = qu + 'p';
     const v = yt_play[0].url;
     const yt = await youtubedl(v).catch(async (_) => await youtubedlv2(v));
