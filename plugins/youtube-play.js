@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 import yts from 'yt-search';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
@@ -50,4 +50,4 @@ handler.help = ['playvideo']
 handler.tags = ['dl']
 handler.command = /^(playvideo|play2)$/i
 
-export default handler
+export default handler/*
