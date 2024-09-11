@@ -73,7 +73,7 @@ await conn.sendMessage(m.chat, { text: texto1, contextInfo: { externalAdReply: {
     }
   }
 }
-    if (command == 'play2') {
+    /*if (command == 'play2') {
     try {  
     const qu = '480';
     const q = qu + 'p';
@@ -163,4 +163,4 @@ const getBuffer = async (url, options) => {
     options ? options : {};
     const res = await axios({method: 'get', url, headers: {'DNT': 1, 'Upgrade-Insecure-Request': 1,}, ...options, responseType: 'arraybuffer'});
     return res.data;
-};
+};/*
