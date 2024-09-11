@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+/*import fetch from 'node-fetch';
 import axios from 'axios';
 import yts from 'yt-search';
 import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
@@ -73,7 +73,7 @@ await conn.sendMessage(m.chat, { text: texto1, contextInfo: { externalAdReply: {
     }
   }
 }
-    /*if (command == 'play2') {
+    if (command == 'play2') {
     try {  
     const qu = '480';
     const q = qu + 'p';
