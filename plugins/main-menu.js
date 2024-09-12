@@ -145,7 +145,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
-    let pp = 'https://tinyurl.com/2gs9xs34'
+    let pp = 'https://tinyurl.com/3zfhe6bh'
 
     //conn.sendButton2(m.chat, text.trim(), null, pp, [
         //], null, [['Canal', `${fgcanal}`]], m)
