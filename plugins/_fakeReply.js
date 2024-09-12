@@ -15,7 +15,7 @@ export async function before(m, { conn }) {
     }, 
       externalAdReply: {
         mediaUrl: bgp,
-        mediaType: 'VIDEO',
+        mediaType: 'PHOTO',
         description: 'support group',
         title: packname,
         body: 'Canal de Starlights',
@@ -36,7 +36,7 @@ export async function before(m, { conn }) {
     }, 
       externalAdReply: {
         mediaUrl: fgcanal,
-        mediaType: 'VIDEO',
+        mediaType: 'PHOTO',
         description: 'canal del grupo',
         title: packname,
         body: 'Canal de Starlights',
@@ -112,7 +112,7 @@ export async function before(m, { conn }) {
       externalAdReply: {
         showAdAttribution: true,
         mediaUrl: fgyt,
-        mediaType: 'VIDEO',
+        mediaType: 'PHOTO',
         description: 'Suscribete: ' + fgyt,
         title: 'FG YouTube',
         body: 'aprende a crear tus propios bots',
