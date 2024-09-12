@@ -32,15 +32,15 @@ No esperes más y lleva tu bot al siguiente nivel con nuestro servicio de alojam
 await conn.sendMessage(m.chat, { text: txt,
 contextInfo:{
 forwardingScore: 9999999,
-isForwarded: false, 
+isForwarded: true, 
 "externalAdReply": {
-"showAdAttribution": true,
+"showAdAttribution": false,
 "containsAutoReply": true,
-title: `INFINITYWA-HOST`,
+title: `🚩 Starlights`,
 body: `✅ Hosting de Calidad`,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://qu.ax/EQTd.jpg', 
-sourceUrl: 'https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A'}}},
+thumbnailUrl: 'https://qu.ax/esoV.jpg', 
+sourceUrl: 'https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S'}}},
 { quoted: m})
 }
 handler.command = /^(infohost|hosting|infinitywa|infinity)$/i
