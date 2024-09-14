@@ -194,8 +194,8 @@ export async function handler(chatUpdate) {
         if (opts['nyimak'])  return
         if (!m.fromMe && opts['self'])  return
         if (settings.solopv && m.chat.endsWith('g.us')) return  
-        if (settings.sologp && !m.chat.endsWith('g.us')) return
-        //if (settings.sologp && !m.chat.endsWith('g.us') && !/jadibot|bebot|getcode|serbot|bots|stop|support|donate|off|on|s|tiktok|code|newcode|join/gim.test(m.text)) return 
+        //if (settings.sologp && !m.chat.endsWith('g.us')) return
+        if (settings.sologp && !m.chat.endsWith('g.us') && !/jadibot|bebot|getcode|serbot|bots|stop|support|donate|off|on|s|tiktok|code|newcode|join/gim.test(m.text)) return 
         if (opts['swonly'] && m.chat !== 'status@broadcast')  return
         if (typeof m.text !== 'string')
             m.text = ''
@@ -622,8 +622,8 @@ global.dfail = (type, m, conn) => {
         unreg: `📇 ${mssg.unregH}`,
         restrict: '🔐 Esta característica está *deshabilitada*'
     }[type]
-    //if (msg) return conn.sendButton(m.chat, msg, mssg.ig, null, [['🔖 OK', 'khajs'], ['⦙☰ MENU', '/menu'] ], m)
-    if (msg) return m.reply(msg)
+    if (msg) return conn.sendButton(m.chat, msg, mssg.ig, null, [['🔖 OK', 'khajs'], ['⦙☰ MENU', '/menu'] ], m)
+    //if (msg) return m.reply(msg)
 }
 
 let file = global.__filename(import.meta.url, true)
