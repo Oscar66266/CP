@@ -536,9 +536,9 @@ export async function participantsUpdate({ id, participants, action }) {
                                 background: 'https://i.ibb.co/jh9367t/akali.jpg'
                             }, 'apikey')
 
-                            //this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
+                            this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                             //this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
-                            this.sendButton(id, text, mssg.ig, action === 'add' ? wel : lea, [
+                            /*this.sendButton(id, text, mssg.ig, action === 'add' ? wel : lea, [
                              [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : 'khajs')], 
                              [(action == 'add' ? '⏍ RULES' : 'ッ'), (action == 'add' ? '/rules' : ' ')] ], null, {mentions: [user]})*/
                           
